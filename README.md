@@ -6,7 +6,7 @@ Will take in add new Patients to Database
 Each patient will have a general info: age, weight, height gender, as well as meds that they take and their current doctor 
 
 ## Database: 
-    will be a data structure of multiple paitents, must be  growable, searchable....
+will be a data structure of multiple paitents, must be  growable, searchable....
 
 ## Patient
 Interface that ensure patient objects must have
