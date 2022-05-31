@@ -1,5 +1,5 @@
 # Intro:
-    All sevice providers need to have a way of managming their customers. This program is designed to simulate a hospital managment system desgined to ledger a hospitals patients, their conditions, medications and doctors
+All sevice providers need to have a way of managming their customers. This program is designed to simulate a hospital managment system desgined to ledger a hospitals patients, their conditions, medications and doctors
 
 ## Project Descritpion: 
 Will take in add new Patients to Database
