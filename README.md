@@ -11,23 +11,23 @@ Each HMS contains a:
 * Set of avaliable medications 
 
 ## Doctor: 
-- name 
-- specialization : will be limited to _ choices
-- years of expirence 
+- Name 
+- Specialization : will be limited to _ choices
+- Years of expirence 
 
 ## Medications:
-- name 
-- dosage 
+- Name 
+- Dosage 
 
 
 ## Patient
-- name
-- age 
-- weight
-- height 
-- gender
-- prescriptions
-- current doctor 
+- Name
+- Age 
+- Weight
+- Height 
+- Gender
+- Prescriptions
+- Current doctor 
 
 
 
