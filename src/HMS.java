@@ -1,11 +1,6 @@
 import java.util.HashSet;
 import java.util.Hashtable;
 
- /*Each HMS contains: 
-    patient database
-    doctor set
-    medication set */ 
-
 public class HMS  {
 
     private Hashtable<Patient, Integer> pd;
@@ -45,6 +40,8 @@ public class HMS  {
         return this.meds;
     }
 
+
+    /* Will contain the driver code for HMS*/
     public static void main(String[] args) {
 
         HMS hms1 = new HMS();

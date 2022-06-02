@@ -1,5 +1,5 @@
 public class Patient{
-	
+
     private String name;
     private int age;
     private int height;
@@ -9,7 +9,7 @@ public class Patient{
 
 
       /*Constructor*/
-    Patient( String name, int age, int height, char gender,  String [] meds) {
+    Patient( String name, int age, int height, char gender,  String [] presciptions) {
         this.name = name;
         this.age = age;
         this.height = height;
