@@ -12,22 +12,21 @@ Each HMS contains a:
 
 ## Doctor: 
 - Name 
-- Specialization : will be limited to _ choices
+- Specialization : will be limited to Cardiology, Radiology and Pharmacology 
 - Years of expirence 
 
-## Medications:
-- Name 
-- Dosage 
-
-
-## Patient
+## Patient:
 - Name
 - Age 
 - Weight
 - Height 
 - Gender
-- Prescriptions
+- Prescriptions List of Medicine enums
 - Current doctor 
 
-
+## Medication:
+Enumerations of common over the counter drugs
+- Ibuprofen (pain realiver)
+- Dextromethorphan (cough medication) 
+- Antihistamine (allergy medication) 
 

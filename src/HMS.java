@@ -9,6 +9,7 @@ public class HMS  {
 
    
     HMS(){
+        
         this.pd = new Hashtable<Patient, Integer>();
         this.docSet = new HashSet<Doctor>();
         this.meds = new HashSet<Medication>();

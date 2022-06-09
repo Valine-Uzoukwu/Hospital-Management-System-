@@ -1,20 +1,47 @@
+
 public class Patient{
 
+	private enum Sex{
+		Male, 
+		Female
+	}
     private String name;
     private int age;
     private int height;
-    private char gender;
-    /*private Medication[] meds;*/
-    /*private Doctor doctor;*/
+    private Sex sex;
+    private Medicine[] prescriptions;
+    private Doctor[] doctors;
 
 
       /*Constructor*/
-    Patient( String name, int age, int height, char gender,  String [] presciptions) {
+    Patient(String name, int age, int height, String sex, Medicine[] presciptions, Doctor[] doctors) {
         this.name = name;
         this.age = age;
         this.height = height;
-        this.gender = gender;
-       /* setMeds(meds);*/
+
+		try{
+		Sex temp = Enum.valueOf(Sex.class , sex.substring(0,1).toUpperCase());
+			
+			switch(temp){
+				case Male:
+				this.sex = Sex.Male;
+				break;
+
+				case Female:
+				this.sex = Sex.Female;
+				break;
+			}
+	
+		}
+		catch (IllegalArgumentException e){
+			System.err.println("Invalid Gender given");
+		}
+      
+		this.prescriptions = presciptions;
+		this.doctors = doctors; 
+
+
+
     }
 
 	public String getName() {
@@ -41,17 +68,34 @@ public class Patient{
 		this.height = height;
 	}
 
-	public Char getGender() {
-		return this.gender;
+	public String getSex() {
+		return this.sex.toString();
 	}
 
-	public void setGender(Char gender) {
-		this.gender = gender;
+	public void setGender(String sex) {
+		try{
+			Sex temp = Enum.valueOf(Sex.class , sex.substring(0,1).toUpperCase());
+				
+				switch(temp){
+					case Male:
+					this.sex = Sex.Male;
+					break;
+	
+					case Female:
+					this.sex = Sex.Female;
+					break;
+				}
+		
+			}
+			catch (IllegalArgumentException e){
+				System.err.println("Invalid Gender given");
+			}
 	}
 
-	/*
-	public String[] getMeds() {
-		return this.meds;
+	
+	public Medicine[] getMeds() {
+
+		return prescriptions;
 	}
 
 	public void setMeds(String[] meds) {
@@ -61,7 +105,7 @@ public class Patient{
 			this.meds[p] = meds[p].clone();
 		}
 
-	}*/
+	}
 
     
 
