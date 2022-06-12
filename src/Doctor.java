@@ -1,8 +1,8 @@
-public class Doctor{
+public class Doctor {
 
     enum Field {
         Cardiology,
-       Neuorology,
+       Pharmacology,
        Radiology
     }   
 
@@ -27,8 +27,8 @@ public class Doctor{
             field = Field.Cardiology;        
             break;
 
-            case Neuorology:
-            field = Field.Neuorology;
+            case Pharmacology:
+            field = Field.Pharmacology;
             break;
 
 
@@ -46,9 +46,9 @@ public class Doctor{
        
 
     }
-/***** For TESTING ******/ 
 
-/*
+
+
     public String getName() {
         return this.name;
     }
@@ -83,6 +83,11 @@ public class Doctor{
             ", exp ='" + getExp() + "'" +
             "}";
     }
+ 
+ 
+    
+/***** For Testing *******/     
+/*
 public static void main(String[] args){
 Doctor doc = new Doctor("Lewis John", "Medicine", -5);
 

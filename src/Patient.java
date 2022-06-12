@@ -10,11 +10,11 @@ public class Patient{
     private int height;
     private Sex sex;
     private Medicine[] prescriptions;
-    private Doctor[] doctors;
+   
 
 
       /*Constructor*/
-    Patient(String name, int age, int height, String sex, Medicine[] presciptions, Doctor[] doctors) {
+    Patient(String name, int age, int height, String sex, Medicine[] presciptions) {
         this.name = name;
         this.age = age;
         this.height = height;
@@ -98,21 +98,26 @@ public class Patient{
 		return prescriptions;
 	}
 
-	public void setMeds(String[] meds) {
-		this.meds = new String[meds.length];
+	public void addMed(Medicine med) {
+		Medicine[] temp = new Medicine[prescriptions.length + 1];
 
-		for(int p = 0; p < meds.length; p++ ){
-			this.meds[p] = meds[p].clone();
+		for(int p = 0; p < prescriptions.length-1; p++ ){
+			temp[p] = prescriptions[p];
 		}
-
+		temp[temp.length-1] = med;
+		prescriptions = temp;
 	}
 
+	public void removeMed(Medicine med) {
+		Medicine[] temp = new Medicine[prescriptions.length - 1];
+
+		for(int p = 0; p < prescriptions.length-1; p++ ){
+			if(prescriptions[p] != med){
+			temp[p] = prescriptions[p];
+		}
+	}
+		
+		prescriptions = temp;
+	}
     
-
-  
-    
-
-
-
-
 }
