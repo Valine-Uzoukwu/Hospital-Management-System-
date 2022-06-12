@@ -50,7 +50,7 @@ public class HMS  {
         while(iter.hasNext()){
              out = iter.next();
             if (out.getName().equals(Name)){
-                return (Doctor) out.clone();
+                return out;
             }
         }
         
